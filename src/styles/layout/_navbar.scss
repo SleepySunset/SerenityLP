@@ -1,0 +1,31 @@
+@use '../index' as *;
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 5px solid $yellow;
+    font-family: $primary-font;    
+}
+
+.brand-container{
+    display: flex;
+    align-items: center;
+    img{
+        max-width: 130px;
+    }   
+}
+
+.nav-menu{
+    display: flex;
+    gap: 30px;
+    a{
+        color: #000000;
+    }
+}
+
+
+
+
+
+

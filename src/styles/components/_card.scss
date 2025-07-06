@@ -1,0 +1,52 @@
+@use '../index' as *;
+
+.card-title {
+    color: black;
+    font-family: $primary-font;
+}
+
+.card-desc {
+    font-family: $primary-font;
+}
+
+
+.home-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $green;
+    width: 80%;
+    padding: 2rem;
+    margin: 1.3rem 0;
+    border-radius: 30px 2px;
+    box-shadow: 17px 21px 52px -26px rgb(114, 117, 65);
+    img{
+        width: 40%;
+        border-radius: 40px;
+    }
+    div {
+        margin: 0 2rem;
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8rem
+        }
+    }
+    
+}
+@include media-down(sm) {
+    .home-card{
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+        img{
+            width: 80%;
+        }
+    }
+    
+}

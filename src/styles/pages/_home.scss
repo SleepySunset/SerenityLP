@@ -1,0 +1,14 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0; 
+}
+
+
+.home :nth-child(2n){
+    flex-direction: row-reverse;
+
+}
+
+
